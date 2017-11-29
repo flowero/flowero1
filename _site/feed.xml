@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>三十功名尘与土，八千里路云和月。</title>
+    <description>description</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 23 Nov 2017 01:25:17 -0600</pubDate>
+    <lastBuildDate>Thu, 23 Nov 2017 01:25:17 -0600</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Valid Parentheses</title>
+        <description>&lt;h1 id=&quot;description&quot;&gt;Description&lt;/h1&gt;
+&lt;p&gt;Given a string containing just the characters ‘(‘, ‘)’, ‘{‘, ‘}’, ‘[’ and ‘]’, determine if the input string is valid.&lt;/p&gt;
+
+&lt;p&gt;The brackets must close in the correct order, “()” and “()[]{}” are all valid but “(]” and “([)]” are not.&lt;/p&gt;
+
+&lt;h1 id=&quot;python&quot;&gt;Python&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;run time: &lt;code class=&quot;highlighter-rouge&quot;&gt;66ms&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Memory(MB) : -&lt;/li&gt;
+  &lt;li&gt;Big-O: -&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Solution(object):
+    def isValid(self, s):
+        tmp = []
+        dic_a = {')':'(', ']':'[','}':'{'}
+        for x in s:
+            if x in dic_a.values():
+                tmp.append(x)
+            elif x in dic_a.keys():
+                if not tmp or tmp.pop() != dic_a[x]:
+                    return False
+            else:
+                return False
+        #return tmp==[]
+        return not tmp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 19 Nov 2017 14:45:00 -0600</pubDate>
+        <link>http://localhost:4000/2017/11/19/20-valid-parentheses/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/19/20-valid-parentheses/</guid>
+        
+        <category>OOP</category>
+        
+        <category>Python</category>
+        
+        <category>ValidParentheses</category>
+        
+        <category>Dict</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>My Programming Journey</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;I started programming C back in college. The most impressive function I have used is bubble sort.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;description&quot;&gt;Description&lt;/h1&gt;
+&lt;p&gt;Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;First Pass:
+( 5 1 4 2 8 ) –&amp;gt; ( 1 5 4 2 8 ), Here, algorithm compares the first two elements, and swaps since 5 &amp;gt; 1.
+( 1 5 4 2 8 ) –&amp;gt;  ( 1 4 5 2 8 ), Swap since 5 &amp;gt; 4
+( 1 4 5 2 8 ) –&amp;gt;  ( 1 4 2 5 8 ), Swap since 5 &amp;gt; 2
+( 1 4 2 5 8 ) –&amp;gt; ( 1 4 2 5 8 ), Now, since these elements are already in order (8 &amp;gt; 5), algorithm does not swap them.
+
+Second Pass:
+( 1 4 2 5 8 ) –&amp;gt; ( 1 4 2 5 8 )
+( 1 4 2 5 8 ) –&amp;gt; ( 1 2 4 5 8 ), Swap since 4 &amp;gt; 2
+( 1 2 4 5 8 ) –&amp;gt; ( 1 2 4 5 8 )
+( 1 2 4 5 8 ) –&amp;gt;  ( 1 2 4 5 8 )
+Now, the array is already sorted, but our algorithm does not know if it is completed. The algorithm needs one whole pass without any swap to know it is sorted.
+
+Third Pass:
+( 1 2 4 5 8 ) –&amp;gt; ( 1 2 4 5 8 )
+( 1 2 4 5 8 ) –&amp;gt; ( 1 2 4 5 8 )
+( 1 2 4 5 8 ) –&amp;gt; ( 1 2 4 5 8 )
+( 1 2 4 5 8 ) –&amp;gt; ( 1 2 4 5 8 )
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;c&quot;&gt;C&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;run time: &lt;code class=&quot;highlighter-rouge&quot;&gt;0s&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Memory(MB) : &lt;code class=&quot;highlighter-rouge&quot;&gt;1.2837266921997&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// C program for implementation of Bubble sort
+#include &amp;lt;stdio.h&amp;gt;
+
+void swap(int *xp, int *yp)
+{
+    int temp = *xp;
+    *xp = *yp;
+    *yp = temp;
+}
+
+// A function to implement bubble sort
+void bubbleSort(int arr[], int n)
+{
+   int i, j;
+   for (i = 0; i &amp;lt; n-1; i++)      
+
+       // Last i elements are already in place   
+       for (j = 0; j &amp;lt; n-i-1; j++)
+           if (arr[j] &amp;gt; arr[j+1])
+              swap(&amp;amp;arr[j], &amp;amp;arr[j+1]);
+}
+
+/* Function to print an array */
+void printArray(int arr[], int size)
+{
+    int i;
+    for (i=0; i &amp;lt; size; i++)
+        printf(&quot;%d &quot;, arr[i]);
+    printf(&quot;n&quot;);
+}
+
+// Driver program to test above functions
+int main()
+{
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    bubbleSort(arr, n);
+    printf(&quot;Sorted array: \n&quot;);
+    printArray(arr, n);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 19 Nov 2017 05:24:00 -0600</pubDate>
+        <link>http://localhost:4000/2017/11/19/my-programming-journey/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/19/my-programming-journey/</guid>
+        
+        <category>编程之旅</category>
+        
+        <category>C</category>
+        
+        <category>BubbleSort</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
