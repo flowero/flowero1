@@ -1,14 +1,12 @@
 ---
-layout   : 
-title    : "LINKED LISTS"
-subtitle : "SINGLY LINKED LISTS -> DOUBLY LINKED LISTS -> CIRCULAR LINKED LISTS"
+layout   : post
+title    : "VALID PARENTHESES"
+subtitle : ""
 date     : 2017-11-19 20:45:00
-author   : Rubie
+author   :
 tags:
     - OOP
     - Python
-    - ValidParentheses
-    - Dict
 ---
 
 

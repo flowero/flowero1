@@ -1,13 +1,12 @@
 ---
 layout   :
 title    : "SORTING"
-subtitle : "SELECTION SORT -> INSERTION SORT -> QUICK SORT -> MERGE SORT"
+subtitle : "Old-Fashioned way V.S. Modern way"
 date     : 2017-11-19 11:24:00
-author   : 
+author   :
 tags:
-    - 编程之旅
     - C
-    - BubbleSort
+    - Sorting
 ---
 
 # Description
