@@ -1,5 +1,5 @@
 ---
-layout   :
+layout   : post
 title    : "SORTING"
 subtitle : "Old-Fashioned way V.S. Modern way"
 date     : 2017-11-19 11:24:00
