@@ -1,7 +1,7 @@
 ---
 layout   : post
-title    : "Valid Parentheses"
-subtitle : "有效的括号"
+title    : "LINKED LISTS"
+subtitle : "SINGLY LINKED LISTS -> DOUBLY LINKED LISTS -> CIRCULAR LINKED LISTS"
 date     : 2017-11-19 20:45:00
 author   : Rubie
 tags:

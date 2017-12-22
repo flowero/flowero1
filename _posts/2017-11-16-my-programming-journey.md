@@ -1,7 +1,7 @@
 ---
 layout   : post
-title    : "My Programming Journey"
-subtitle : "我的编程旅程"
+title    : "SORTING"
+subtitle : "SELECTION SORT -> INSERTION SORT -> QUICK SORT -> MERGE SORT"
 date     : 2017-11-19 11:24:00
 author   : Rubie
 tags:
