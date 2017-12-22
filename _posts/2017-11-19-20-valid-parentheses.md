@@ -1,5 +1,5 @@
 ---
-layout   : post
+layout   : 
 title    : "LINKED LISTS"
 subtitle : "SINGLY LINKED LISTS -> DOUBLY LINKED LISTS -> CIRCULAR LINKED LISTS"
 date     : 2017-11-19 20:45:00

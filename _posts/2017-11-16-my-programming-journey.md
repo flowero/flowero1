@@ -1,16 +1,14 @@
 ---
-layout   : post
+layout   :
 title    : "SORTING"
 subtitle : "SELECTION SORT -> INSERTION SORT -> QUICK SORT -> MERGE SORT"
 date     : 2017-11-19 11:24:00
-author   : Rubie
+author   : 
 tags:
     - 编程之旅
     - C
     - BubbleSort
 ---
-
->I started programming C back in college. The most impressive function I have used is bubble sort.
 
 # Description
 Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
